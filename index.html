@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Time Tracker</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
+    <meta name="description" content="Time Tracker" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="mainBox">
+      
+      <!--firstBigCard-->
+      <div class="firstBigBox">
+        <div class="bigBoxFirstHalf">
+          <img
+            src="images/image-jeremy.png"
+            alt="Image of Jeremy"
+            class="imageFirst"
+          />
+          <div class="textBOX">
+            <h6 class="firstText">Report for</h6>
+            <h3 class="secondText">
+              Jeremy
+              Robson
+            </h3>
+          </div>
+        </div>
+        <div class="bigBoxSecondHalf">
+          <button
+            class="firstBoxButtons"
+            id="dailyButton"
+            onmouseup="dailyButton()"
+            >
+            Daily
+          </button>
+          <button
+            class="firstBoxButtons"
+            id="weeklyButton"
+            onmouseup="weeklyButton()"
+          >
+            Weekly
+          </button>
+          <button
+            class="firstBoxButtons"
+            id="monthlyButton"
+            onmouseup="monthlyButton()"
+          >
+            Monthly
+          </button>
+        </div>
+        <!--END bigboxsecondhalf-->
+      </div>
+      <!--END firstBigCard-->
+
+      <!--WholeBox START-->
+      <div class="wholeBox">
+        <!--tophalfbox START-->
+        <div class="topHalfBox">
+          <!-- First Element-->
+          <div class="bigBox" id="bigBoxWork">
+            <div class="boxTop">
+              <img
+                src="images/icon-work.png"
+                alt="someimage"
+                class="topPicture"
+              />
+            </div>
+            <!--BoxTop-->
+            <div class="BoxBottom">
+              <div class="TopBottom">
+                <h3 class="h3Text" id="workText">-</h3>
+                <img
+                  src="images/icon-ellipsis.png"
+                  alt="Ellipsis Picture"
+                  class="ellipsisPic"
+                />
+              </div>
+              <!-- END BoxTop-->
+              <!--workTopBottom-->
+              <div class="BottomBottom">
+                <h1 class="h1Text" id="workHours">-</h1>
+                <p class="lastText" id="workLWHours">-</p>
+              </div>
+              <!--END workTopBottom-->
+            </div>
+          </div>
+          <!--END wholebox -->
+          <!-- END First Element-->
+
+          <div class="bigBox" id="bigBoxPlay">
+            <div class="boxTop" id="playTopBox">
+              <img
+                alt="someimage"
+                class="topPicture"
+                src="images/icon-play.png"
+              />
+            </div>
+            <!--BoxTop-->
+            <div class="BoxBottom">
+              <div class="TopBottom">
+                <h3 class="h3Text" id="playText">-</h3>
+                <img
+                  src="images/icon-ellipsis.png"
+                  alt="Ellipsis Picture"
+                  class="ellipsisPic"
+                />
+              </div>
+              <!-- END BoxTop-->
+              <!--workTopBottom-->
+              <div class="BottomBottom">
+                <h1 class="h1Text" id="playHours">-</h1>
+                <p class="lastText" id="playLWHours">-</p>
+              </div>
+              <!--END workTopBottom-->
+            </div>
+          </div>
+          <!--END wholebox -->
+          <!-- END second Element-->
+          
+          <div class="bigBox" id="bigBoxStudy">
+            <div class="boxTop" id="studyTopBox">
+              <img
+                alt="someimage"
+                class="topPicture"
+                src="images/icon-study.png"
+              />
+            </div>
+            <!--BoxTop-->
+            <div class="BoxBottom">
+              <div class="TopBottom">
+                <h3 class="h3Text" id="studyText">-</h3>
+                <img
+                  src="images/icon-ellipsis.png"
+                  alt="Ellipsis Picture"
+                  class="ellipsisPic"
+                />
+              </div>
+              <!-- END BoxTop-->
+              <!--workTopBottom-->
+              <div class="BottomBottom">
+                <h1 class="h1Text" id="studyHours">-</h1>
+                <p class="lastText" id="studyLWHours">-</p>
+              </div>
+              <!--END workTopBottom-->
+            </div>
+          </div>
+          <!--END wholebox -->
+          <!-- END Third Element-->
+        </div>
+        <!--topHalfBox-->
+
+        <!--bottomHalfBox-->
+        <div class="bottomHalfBox">
+          <div class="bigBox" id="bigBoxExercise">
+            <div class="boxTop" id="exerciseTopBox">
+              <img
+                alt="exercise image"
+                class="topPicture"
+                src="images/icon-exercise.png"
+              />
+            </div>
+            <!--BoxTop-->
+            <div class="BoxBottom">
+              <div class="TopBottom">
+                <h3 class="h3Text" id="exerciseText">-</h3>
+                <img
+                  src="images/icon-ellipsis.png"
+                  alt="Ellipsis Picture"
+                  class="ellipsisPic"
+                />
+              </div>
+              <!-- END BoxTop-->
+              <!--workTopBottom-->
+              <div class="BottomBottom">
+                <h1 class="h1Text" id="exerciseHours">-</h1>
+                <p class="lastText" id="exerciseLWHours">-</p>
+              </div>
+              <!--END workTopBottom-->
+            </div>
+          </div>
+          <!--END wholebox -->
+          
+          <!-- END fourth Element-->
+          <div class="bigBox" id="bigBoxSocial">
+            <div class="boxTop" id="socialTopBox">
+              <img
+                alt="someimage"
+                class="topPicture"
+                src="images/icon-social.png"
+              />
+            </div>
+            <!--BoxTop-->
+            <div class="BoxBottom">
+              <div class="TopBottom">
+                <h3 class="h3Text" id="socialText">-</h3>
+                <img
+                  src="images/icon-ellipsis.png"
+                  alt="Ellipsis Picture"
+                  class="ellipsisPic"
+                />
+              </div>
+              <!-- END BoxTop-->
+              <!--workTopBottom-->
+              <div class="BottomBottom">
+                <h1 class="h1Text" id="socialHours">-</h1>
+                <p class="lastText" id="socialLWHours">-</p>
+              </div>
+              <!--END workTopBottom-->
+            </div>
+          </div>
+          <!--END wholebox -->
+          <!-- END fifth Element-->
+          
+          <div class="bigBox" id="bigBoxSelfCare">
+            <div class="boxTop" id="selfCareTopBox">
+              <img
+                alt="Self Care Image"
+                class="topPicture"
+                id="selfCareImage"
+                src="images/icon-self-care.png"
+              />
+            </div>
+            <!--BoxTop-->
+            <div class="BoxBottom">
+              <div class="TopBottom">
+                <h3 class="h3Text" id="selfCareText">-</h3>
+                <img
+                  src="images/icon-ellipsis.png"
+                  alt="Ellipsis Picture"
+                  class="ellipsisPic"
+                />
+              </div>
+              <!-- END BoxTop-->
+              <!--workTopBottom-->
+              <div class="BottomBottom">
+                <h1 class="h1Text" id="selfCareHours">-</h1>
+                <p class="lastText" id="selfCareLWHours">-</p>
+              </div>
+              <!--END workTopBottom-->
+            </div>
+          </div>
+          <!--END wholebox -->
+          <!-- END sixth Element-->
+        
+        </div>
+        <!--bottomHalfBox-->
+      </div>
+    </div>
+    <!--mainEnd-->
+
+    <script src="index.js" async defer></script>
+  </body>
+</html>

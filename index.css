@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+
+.mainBox
+{
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    background-color: hsl(226, 43%, 10%);
+}
+
+.firstBigBox
+{
+    width: 15%;
+    height: 52vh;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 1vh;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 2vh;
+}
+
+.textBOX
+{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.imageFirst
+{
+    margin-top: 2vh;
+    margin-left: 3vh;
+    width: 30%;
+    background-color: white;
+    border-radius: 40%;
+}
+
+.bigBoxFirstHalf
+{
+    height: 35vh;
+    width: 100%;   
+    border-radius: 5px;
+    background-color: hsl(246, 80%, 60%);
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.firstText
+{
+    margin-left: 3vh;
+    font-size: 1vw;
+    margin-top: 0.5vh;
+}
+
+.secondText
+{
+    margin-left: 3vh;
+    font-size: 2vw;
+}
+
+.bigBoxSecondHalf
+{
+    height: 17vh;
+    width: 100%;
+    background-color: hsl(235, 46%, 20%);
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    border-radius: 2vh;
+}
+
+.firstBoxButtons
+{
+    margin-top: 1.2vh;
+    padding: 0.5vh;
+    padding-right: 1.5vh;
+    padding-left: 1.5vh;
+    border: none;
+    background-color: transparent;
+    font-size: 1.3vw;
+    font-weight: 500;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    border-radius: 0.7vh;
+}
+
+.firstBoxButtons:hover
+{
+    cursor: pointer;
+}
+
+.firstBoxButtons:active
+{
+    color: rgba(255, 0, 0, 0.972);
+}
+
+.wholeBox
+{
+    flex: 0 0 auto;
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.topHalfBox
+{
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    margin: 1vh;
+}
+
+.bottomHalfBox 
+{
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    margin: 1vh;
+}
+
+.bigBox
+{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: hsl(15, 100%, 70%);
+    border-radius: 5px;
+    margin: 0.5vh;
+}
+
+.boxTop
+{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    overflow:hidden;
+    border-top-left-radius: 2vh;
+    border-top-right-radius: 2vh;
+}
+
+.topPicture
+{
+    width: 30%; 
+}
+
+.BoxBottom
+{
+    width: 100%;
+    height: 80%;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 3px;
+}
+
+.TopBottom
+{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.h3Text
+{
+    text-align: center;
+    font-size: 1.3vw;
+    margin-left: 2vh;
+}
+
+.ellipsisPic
+{
+    width: 10%;
+    height: 15%;
+    margin-right: 2vh;
+}
+
+.BottomBottom
+{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.h1Text
+{
+    font-size: 2.2vw;
+    padding: 1vh;
+    margin-top: 3vh;
+}
+
+.lastText
+{
+    margin-right: 3vh;
+    font-size: 1vw;
+    opacity: 0.5;
+}
+
+#playTopBox
+{
+    background-color: hsl(195, 74%, 62%);
+}
+
+@media only screen and (max-width: 375px) 
+{    
+    .mainBox 
+    {
+        width: 100%;
+        display: flex;
+        overflow: auto;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        background-color: hsl(226, 43%, 10%);
+    }
+    
+    .topHalfBox
+    {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .bottomHalfBox 
+    {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .wholeBox
+    {
+        flex: 0 0 auto;
+        width: 50%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .boxTop
+    {
+        height: 3.5vh;
+    }
+}
+
+/* 
+#####################
+#FIRST BIG BOX MEDIA# 
+#####################
+*/
+@media only screen and (max-width: 375px) 
+{
+    .firstBigBox
+    {
+        width: 17%;
+        height: 15vh;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        margin: 0.1vh;
+    }
+    .bigBoxFirstHalf
+    {
+        height: 8vh;
+        width: 100%;   
+        border-radius: 2vh;
+        background-color: hsl(246, 80%, 60%);
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+    }
+    .bigBoxSecondHalf
+    {
+        height: 6vh;
+        width: 100%;
+        background-color: hsl(235, 46%, 20%);
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        border-radius: 1vh;
+    }
+    .imageFirst
+    {
+        margin-top: 1vh;
+        margin-left: 1vh;
+        width: 20%;
+        background-color: white;
+        border-radius: 40%;
+    }
+    .firstText
+    {
+        margin-left: 1vh;
+        font-size: 1.1vw;
+        margin-top: 0.4vh;
+        text-align: center;
+        opacity: 0.5;
+    }
+    .secondText
+    {
+        margin-left: 2vh;
+        font-size: 1vw;
+        margin-top: 0.1vh;
+        text-align: center;
+    }
+    .textBOX
+    {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .firstBoxButtons
+    {
+        margin-top: 1vh;
+        margin-left: 1vh;
+        border: none;
+        font-size: 1vw;
+        font-weight: 500;
+        color: white;
+        font-family: 'Rubik', sans-serif;
+    }
+}
+
+
+
+/* 
+###########
+####IDS#### 
+###########
+*/
+#bigBoxWork
+{
+    background-color: hsl(15, 100%, 70%);
+}
+
+#bigBoxPlay
+{
+    background-color: hsl(195, 74%, 62%);
+}
+
+#bigBoxStudy, #studyTopBox
+{
+    background-color: hsl(348, 100%, 68%);
+}
+
+#exerciseTopBox, #bigBoxExercise
+{
+    background-color: hsl(145, 58%, 55%);
+}
+
+#socialTopBox, #bigBoxSocial
+{
+    background-color: hsl(264, 64%, 52%);
+}
+
+#bigBoxSelfCare, #selfCareTopBox
+{
+    background-color: hsl(43, 84%, 65%);
+}
+
+#selfCareImage
+{
+    width: 30%;
+    height: 99%;
+}
+
+#dailyButton
+{
+    background-color: transparent;
+}
+#weeklyButton
+{
+    background-color: transparent;
+}
+#monthlyButton
+{
+    background-color: transparent;
+}
