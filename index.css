@@ -230,8 +230,18 @@ body
     background-color: hsl(195, 74%, 62%);
 }
 
-@media only screen and (max-width: 375px) 
+@media only screen and (max-width: 500px) 
 {    
+    .wholeBox
+    {
+        flex: 0 0 auto;
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
     .mainBox 
     {
         width: 100%;
@@ -246,7 +256,7 @@ body
     .topHalfBox
     {
         width: 100%;
-        height: 20%;
+        height: 35vh;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -256,24 +266,35 @@ body
     .bottomHalfBox 
     {
         width: 100%;
-        height: 20%;
+        height: 35vh;
         display: flex;
         align-items: center;
         flex-direction: column;
         justify-content: space-between;
-    }
-    .wholeBox
-    {
-        flex: 0 0 auto;
-        width: 50%;
-        height: auto;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+        margin-top: 6vh;
+        margin-bottom: 10vh;
     }
     .boxTop
     {
         height: 3.5vh;
+    }
+    .bigBox
+    {
+        width: 70%;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        background-color: hsl(15, 100%, 70%);
+        border-radius: 5px;
+        margin: 0.5vh;
+    }
+    .ellipsisPic
+    {
+        width: 12%;
+        height: 20%;
+        margin-right: 2vh;
+        margin-top: 0.2vh;
     }
 }
 
@@ -282,16 +303,17 @@ body
 #FIRST BIG BOX MEDIA# 
 #####################
 */
-@media only screen and (max-width: 375px) 
+@media only screen and (max-width: 500px) 
 {
     .firstBigBox
     {
-        width: 90%;
-        height: 15vh;
+        width: 70%;
+        height: 13vh;
         display: flex;
         align-items: flex-start;
         flex-direction: column;
-        margin: 0.1vh;
+        margin: 0.01vh;
+        margin-top: 3vh;
     }
     .bigBoxFirstHalf
     {
@@ -323,16 +345,16 @@ body
     }
     .firstText
     {
-        margin-left: 1vh;
-        font-size: 1.1vw;
-        margin-top: 0.4vh;
+        margin-left: 3vh;
+        font-size: 1rem;
+        margin-top: 1.5vh;
         text-align: center;
         opacity: 0.5;
     }
     .secondText
     {
         margin-left: 2vh;
-        font-size: 1vw;
+        font-size: 1rem;
         margin-top: 0.1vh;
         text-align: center;
     }
@@ -344,10 +366,10 @@ body
     }
     .firstBoxButtons
     {
-        margin-top: 1vh;
+        margin-top: 1.4vh;
         margin-left: 1vh;
         border: none;
-        font-size: 1vw;
+        font-size: 1rem;
         font-weight: 500;
         color: white;
         font-family: 'Rubik', sans-serif;
@@ -359,20 +381,21 @@ body
 #SECOND BIG BOX MEDIA# 
 #####################
 */
-@media only screen and (max-width: 375px) 
+@media only screen and (max-width: 500px) 
 {
     .h1Text
     {
-        font-size: 1.5vw;
+        font-size: 1.1rem;
         padding: 1vh;
-        margin-top: 1vh;
+        margin-top: 1.5vh;
     }
     
     .lastText
     {
         margin-right: 3vh;
-        font-size: 0.8vw;
+        font-size: 0.8rem;
         opacity: 0.5;
+        margin-bottom: 1vh;
     }
 }
 
