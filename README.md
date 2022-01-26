@@ -1,2 +1,2 @@
-# timetracking.github.io
+# timetracking
 frontendmentor.io Challenge
