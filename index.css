@@ -261,6 +261,7 @@ body
         align-items: center;
         flex-direction: column;
         justify-content: space-between;
+        margin-bottom: 6vh;
     }
     
     .bottomHalfBox 
